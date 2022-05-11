@@ -1,0 +1,24 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+#fps {
+  position: absolute;
+  color: #29fa33;
+  top: 0;
+  left: 0;
+  font-size: 1.2vw;
+}
+
+#helper {
+  position: absolute;
+  position: absolute;
+  color: #aaa;
+  top: 0;
+  right: 10px;
+  font-size: 1.2vw;
+}

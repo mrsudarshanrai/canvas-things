@@ -1,5 +1,6 @@
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
+const reGenerateBtn = document.getElementById("regenerate-btn");
 canvas.width = 300;
 canvas.height = 160;
 document.body.appendChild(canvas);
@@ -81,3 +82,7 @@ for (let i = 0; i < 500; i++) {
   const size = getRandomNumberBetween(1, 3);
   createDots(x, y, color, size);
 }
+
+reGenerateBtn?.addEventListener("click", () => {
+  window.location.reload();
+});

@@ -28,7 +28,7 @@ class Dots implements IDots {
     this.y = y;
     this.speedX = Math.random() * 1.6 - 1.2;
     this.speedY = Math.random() * 1.6 - 1.2;
-    this.size = Math.random() * 1.3;
+    this.size = Math.random() * 2.5;
     this.color = "red";
   }
 

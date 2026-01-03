@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas-Things | Preview</title>
+    <style>
+        :root {
+            --bg: #0e0e0e;
+            --card-bg: #161616;
+            --accent: #8651c9;
+            --border: #2a2a2a;
+            --text-main: #ffffff;
+            --text-dim: #777;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        header h1 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+            color: var(--accent);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--bg);
+            border: 1px solid var(--border);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 260px;
+            transition: all 0.3s ease;
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card:hover {
+            border-color: var(--accent);
+            background-color: var(--card-bg);
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .project-number {
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+
+        /* View Source Button */
+        .src-link {
+            font-family: monospace;
+            font-size: 0.7rem;
+            color: var(--accent);
+            text-decoration: none;
+            border: 1px solid var(--accent);
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: 0.2s;
+            z-index: 2;
+        }
+
+        .src-link:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .project-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 20px 0;
+            line-height: 1.2;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: var(--text-dim);
+        }
+
+        .arrow {
+            width: 18px;
+            height: 18px;
+            stroke: var(--text-dim);
+            transition: 0.3s;
+        }
+
+        .project-card:hover .arrow {
+            stroke: var(--accent);
+            transform: translateX(3px);
+        }
+
+        .main-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        @media (max-width: 600px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Canvas Things Preview</h1>
+        </header>
+
+        <div class="bento-grid">
+
+            <div class="project-card">
+                <a href="./connecting-line-particles/index.html" class="main-link" target="_blank"></a>
+                <div class="card-header">
+                    <span class="project-number">/ 01</span>
+                    <a href="https://github.com/mrsudarshanrai/canvas-things/tree/main/connecting-line-particles"
+                        class="src-link" target="_blank">SOURCE</a>
+                </div>
+                <h2 class="project-title">Connecting Line Particles</h2>
+                <div class="card-footer">
+                    <span class="category">Interactive Visual</span>
+                    <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <a href="./archery/index.html" class="main-link" target="_blank"></a>
+                <div class="card-header">
+                    <span class="project-number">/ 02</span>
+                    <a href="https://github.com/mrsudarshanrai/canvas-things/tree/main/archery" class="src-link"
+                        target="_blank">SOURCE</a>
+                </div>
+                <h2 class="project-title">Archery Game</h2>
+                <div class="card-footer">
+                    <span class="category">Physics Game</span>
+                    <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <a href="./captcha-generator/index.html" class="main-link" target="_blank"></a>
+                <div class="card-header">
+                    <span class="project-number">/ 03</span>
+                    <a href="https://github.com/mrsudarshanrai/canvas-things/tree/main/captcha-generator"
+                        class="src-link" target="_blank">SOURCE</a>
+                </div>
+                <h2 class="project-title">Captcha Generator</h2>
+                <div class="card-footer">
+                    <span class="category">Utility Lab</span>
+                    <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <a href="./particles-01/index.html" class="main-link" target="_blank"></a>
+                <div class="card-header">
+                    <span class="project-number">/ 04</span>
+                    <a href="https://github.com/mrsudarshanrai/canvas-things/tree/main/particles-01" class="src-link"
+                        target="_blank">SOURCE</a>
+                </div>
+                <h2 class="project-title">Particles 01</h2>
+                <div class="card-footer">
+                    <span class="category">Visualizer</span>
+                    <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

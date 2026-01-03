@@ -14,3 +14,4 @@ A directory of all the canvas things you can do.
 - [Particles 01](https://github.com/mrsudarshanrai/canvas-things/tree/main/particles-01)
 - [Connecting line particles](https://github.com/mrsudarshanrai/canvas-things/tree/main/connecting-line-particles)
 - [Captcha generator](https://github.com/mrsudarshanrai/canvas-things/tree/main/captcha-generator)
+- [Archery](https://github.com/mrsudarshanrai/canvas-things/tree/main/archery)

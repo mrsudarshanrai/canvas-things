@@ -9,7 +9,9 @@
 </p>
 
 <p align="center">
-  <strong>A curated directory of interactive experiments and creative coding built with the HTML5 Canvas API.</strong>
+  <strong>Just a bunch of things I built while playing around with the HTML5 Canvas API.</strong>
+  <br />
+  From physics simulations to interactive particles — this is where I document my learning.</strong>
   <br />
   <a href="https://mrsudarshanrai.github.io/canvas-things/"><strong>Explore the Live Demo »</strong></a>
 </p>

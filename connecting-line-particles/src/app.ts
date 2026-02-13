@@ -28,7 +28,7 @@ class Dots implements IDots {
     this.y = y;
     this.speedX = Math.random() * 1.6 - 1.2;
     this.speedY = Math.random() * 1.6 - 1.2;
-    this.size = Math.random() * 2.5;
+    this.size = 3;
     this.color = "red";
   }
 
@@ -74,7 +74,7 @@ for (let i = 0; i < numberOfDots; i++) {
 const makeLines = (index: number, i: number) => {
   ctx!.beginPath();
   ctx!.strokeStyle = "white";
-  ctx!.lineWidth = 0.2;
+  ctx!.lineWidth = .4;
   ctx!.moveTo(lotsOfDot[index].x, lotsOfDot[index].y);
   ctx!.lineTo(lotsOfDot[i].x, lotsOfDot[i].y);
   ctx!.stroke();
